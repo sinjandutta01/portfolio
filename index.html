@@ -1,84 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #0684eb;
-      color: black;
-      padding: 2rem;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 1rem;
-      color: #fff;
-      text-decoration: none;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .project {
-      background: #fff;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 1rem;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Junior Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" /> <!-- ✅ Link external CSS here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 </head>
+
 <body>
 
-  <header>
-    <h1>Mr. Sinjan Dutta</h1>
-    <p>Web Developer | Designer | Programmer</p>
-  </header>
+  <div class="container-fluid">
+    <div class="row">
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm a passionate developer who loves creating web applications and learning new technologies.</p>
-  </section>
+      <!-- Sidebar -->
+      <div class="col-md-3 col-lg-2 sidebar d-flex flex-column align-items-center text-center">
+        <img src="pic.jpg" alt="Profile" class="profile-pic mb-3">
+        <h4>Sinjan Dutta</h4>
+        <p class="text-muted">JuniorSoftware Developer</p>
+        <nav class="nav flex-column mt-4 w-100 px-3">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#certificates">Certificates</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#education">Education</a>
+          <a class="nav-link" href="#activities">Activities</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    
-    <div class="project">
-      <h3>Project One</h3>
-      <p>Description of your project. What did you build? What tech did you use?</p>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-md-9 col-lg-10 content">
+
+        <!-- About -->
+        <section id="about" class="mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="section-title">About Me</h3>
+              <p>
+                I'm a motivated junior developer with a passion for learning and building web applications.
+                I specialize in front-end development and have a solid foundation in HTML, CSS, JavaScript, and
+                Bootstrap.
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+        <section id="skills" class="mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="section-title">Skills</h3>
+
+              <!-- Frontend Languages -->
+              <h5><i class="fas fa-code text-primary me-2"></i>Frontend</h5>
+              <ul>
+                <li><i class="fab fa-html5 text-danger me-2"></i>HTML5</li>
+                <li><i class="fab fa-css3-alt text-info me-2"></i>CSS3</li>
+                <li><i class="fab fa-js text-warning me-2"></i>JavaScript (Basic)</li>
+                <li><i class="fab fa-bootstrap text-purple me-2"></i>Bootstrap 5</li>
+              </ul>
+
+              <!-- Backend Languages -->
+              <h5><i class="fas fa-server text-success me-2"></i>Backend</h5>
+              <ul>
+                <li><i class="fab fa-java text-danger me-2"></i>Java</li>
+                <li><i class="fab fa-node-js text-success me-2"></i>Node.js</li>
+              </ul>
+
+              <!-- Tools / CI/CD -->
+              <h5><i class="fas fa-tools text-secondary me-2"></i>CI/CD & Tools</h5>
+              <ul>
+                <li><i class="fab fa-github text-dark me-2"></i>Git & GitHub</li>
+              </ul>
+
+              <!-- Operating Systems -->
+              <h5><i class="fas fa-desktop text-muted me-2"></i>Operating Systems</h5>
+              <ul>
+                <li><i class="fab fa-linux text-dark me-2"></i>Linux</li>
+                <li><i class="fab fa-windows text-primary me-2"></i>Windows</li>
+              </ul>
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Education -->
+        <section id="education" class="mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="section-title"><i class="fas fa-graduation-cap me-2 text-primary"></i>Education</h3>
+              <ul class="list-unstyled">
+
+                <li class="mb-3">
+                  <i class="fas fa-university text-success me-2"></i>
+                  <strong>B.Tech in Information Technology</strong><br />
+                  Narula Institute Of Technology, <em>2023 – Present</em><br />
+                  <small>Current CGPA: <strong>6</strong></small>
+                </li>
+
+                <li class="mb-3">
+                  <i class="fas fa-school text-warning me-2"></i>
+                  <strong>Diploma in Civil Engineering</strong><br />
+                  Narula Institute Of Technology, <em>2019 – 2022</em><br />
+                  <small>Percentage: <strong>71%</strong></small>
+                </li>
+
+                <li class="mb-3">
+                  <i class="fas fa-book-reader text-info me-2"></i>
+                  <strong>Secondary (10th Grade)</strong><br />
+                  Central Model School, <em>2019</em><br />
+                  <small>Percentage: <strong>34.6%</strong></small>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </section>
+
+
+
+        <!-- Special Co-curricular Activities -->
+        <section id="activities" class="mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="section-title">Special Co-curricular Activities</h3>
+              <ul>
+                <li>Active member of the College Coding Club</li>
+                <li>Participated in Hackathon 2023 (Top 10 finalist)</li>
+                <li>Volunteered in Tech Fest organization team</li>
+                <li>Completed 100 Days of Code Challenge</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+
+
+        <!-- Certificates -->
+        <section id="certificates" class="mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="section-title"><i class="fas fa-certificate text-success me-2"></i>Certificates</h3>
+              <ul>
+                <li><i class="fas fa-globe me-2 text-primary"></i>Intro to Web Development - Coursera</li>
+                <li><i class="fab fa-free-code-camp me-2 text-warning"></i>HTML & CSS - freeCodeCamp</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects" class="mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="section-title"><i class="fas fa-project-diagram text-danger me-2"></i>Projects</h3>
+              <ul>
+                <li><i class="fas fa-globe me-2 text-primary"></i><strong>Portfolio Website:</strong> Built with HTML,
+                  CSS, Bootstrap</li>
+                <li><i class="fas fa-tasks me-2 text-info"></i><strong>To-Do App:</strong> Simple task manager using
+                  JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact" class="mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="section-title"><i class="fas fa-address-book text-secondary me-2"></i>Contact</h3>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-envelope me-2 text-danger"></i><strong>Email:</strong> <a
+                    href="mailto:johndoe@example.com">sinjandutta01@gmail.com</a></li>
+                <li><i class="fas fa-phone me-2 text-success"></i><strong>Phone:</strong> +91-9051077898</li>
+                <li><i class="fab fa-linkedin me-2 text-primary"></i><strong>LinkedIn:</strong> <a
+                    href="https://www.linkedin.com/in/sinjan-dutta-89a9a4374/" target="_blank">linkedin.com/in/sinjan-dutta-89a9a4374/</a></li>
+                <li><i class="fab fa-github me-2 text-dark"></i><strong>GitHub:</strong> <a
+                    href="https://github.com/sinjandutta01" target="_blank">github.com/sinjandutta01</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
     </div>
-
-    <div class="project">
-      <h3>Project Two</h3>
-      <p>Another project description. Highlight your role and accomplishments.</p>
+  </div>
+  <!-- Footer -->
+  <footer class="text-center text-muted py-4 mt-5 border-top bg-light">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Sinjan Dutta. All rights reserved.</p>
+      <small>Made with ❤️ using HTML, CSS, and Bootstrap.</small>
     </div>
-
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Your Name. All rights reserved.</p>
   </footer>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
